@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace c_sharp4
 {
+    //program that takes two numbers as input and perform an operation (+,-,*,x,/)
     class Program
     {
         static void Main(string[] args)
