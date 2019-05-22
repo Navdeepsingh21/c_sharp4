@@ -11,14 +11,38 @@ namespace c_sharp4
         static void Main(string[] args)
         {
             int a, b;
-            Console.Write("enter first number");
+            string operation;
+            Console.Write("enter 1st number");
             a = int.Parse(Console.ReadLine());
 
-            Console.Write("enter second number");
-            b = int.Parse(Console.ReadLine());
+            Console.Write("enter operator");
+            operation = Console.ReadLine();
 
-            Console.WriteLine(a - b);
-            Console.ReadLine();
+            Console.Write("enter 2nd number");
+            b = int.Parse(Console.ReadLine());
+            switch (operation)
+            {
+                case "-":
+                    Console.WriteLine(a - b);
+                    break;
+                case "+":
+                    Console.WriteLine(a + b);
+                    break;
+                case "/":
+                    Console.WriteLine(a / b);
+                    break;
+                case "*":
+                    Console.WriteLine(a * b);
+                    break;
+                case "%":
+                    Console.WriteLine(a % b);
+                    break;
+                default:
+                    Console.WriteLine("wrong character");
+                    break;
+
+            }
+;
         }
     }
 }
